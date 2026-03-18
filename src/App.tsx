@@ -6,15 +6,14 @@ import EstiloGlobal from './styles'
 function App() {
   return (
     <>
-      <EstiloGlobal>
+      <EstiloGlobal />
       <Header />
       <Hero />
       <div className="container">
         <ListaVagas />
       </div>
-      <EstiloGlobal />
     </>
   )
 }
 
-export default App;
+export default App
