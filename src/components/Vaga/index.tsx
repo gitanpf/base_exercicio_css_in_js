@@ -1,4 +1,4 @@
-import styles from './Vaga.module.css'
+import { Card, Titulo, Link } from './styles'
 
 type Props = {
   titulo: string
@@ -11,21 +11,19 @@ type Props = {
 }
 
 const Vaga = (props: Props) => (
-  <li className={styles.vaga}>
-    <h3 className={styles.vagaTitulo}>{props.titulo}</h3>
+  <Card>
+    <Titulo>{props.titulo}</Titulo>
     <ul>
-      <li>Localizacao: {props.localizacao}</li>
+      <li>Localização: {props.localizacao}</li>
       <li>Senioridade: {props.nivel}</li>
-      <li>Tipo de contratacao: {props.modalidade}</li>
+      <li>Tipo: {props.modalidade}</li>
       <li>
         Salário: {props.salarioMin} - {props.salarioMax}
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <a className={styles.vagaLink} href="#">
-      Ver detalhes e candidatar-se
-    </a>
-  </li>
+    <Link href="#">Ver detalhes</Link>
+  </Card>
 )
 
 export default Vaga

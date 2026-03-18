@@ -23,6 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslintConfig": {
     "extends": [
       "react-app",
