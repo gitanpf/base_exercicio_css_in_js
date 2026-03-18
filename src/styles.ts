@@ -32,4 +32,4 @@ body {
 }
 `;
 
-export defaul EstiloGlobal
+export default EstiloGlobal
